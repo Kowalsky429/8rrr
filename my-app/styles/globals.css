@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #161616;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.activeMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: #161616;
+  z-index: 999;
+  display: flex;
+}
+
+/* .li {
+  max-width: 700px;
+}
+.li::first-letter {
+  margin-left: 35px;
+}
+.li::before {
+  content: '';
+  position: absolute;
+  transform: translateY(14px);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #f5d9b6;
+} */
