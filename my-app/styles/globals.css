@@ -33,18 +33,11 @@ a {
   display: flex;
 }
 
-/* .li {
-  max-width: 700px;
+::placeholder {
+  color: #f5d9b6 !important;
 }
-.li::first-letter {
-  margin-left: 35px;
+
+input,
+textarea {
+  outline: none;
 }
-.li::before {
-  content: '';
-  position: absolute;
-  transform: translateY(14px);
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #f5d9b6;
-} */

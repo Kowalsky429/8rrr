@@ -17,7 +17,8 @@ module.exports = {
       active: '#EEBC7F',
       light: '#F5D9B6',
       menuCover: 'rgba(0,0,0,0.9)',
-      cardCover: 'rgba(0,0,0,0.38)',
+      cardCover: 'rgba(0,0,0,0.3)',
+      titleDecoration: 'rgba(255,255,255,0.1)',
     },
     fontFamily: {
       kalam: ['Kalam', 'cursive'],

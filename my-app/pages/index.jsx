@@ -27,7 +27,7 @@ export default function Home() {
           name="keywords"
           content="Patrycja Janik, dietetyk, dietetyk powszechny, dietetyk online, poradnia dietetyczna, wspolczesna dietetyka, lekarz dietetyk, ile kosztuje dietetyk, gabinet dietetyczny, dobry dietetyk online, rozpisane diety cena, najlepsi dietetycy online, ukladanie diety online, lekarz dietetyk kliniczny, najlepszy dietetyk, dietetyk opole, dietetyk polska, najlepszy dietetyk opole, polecany dietetyk, polecany dietetyk opole, tani dobry dietetyk, jak schudnac, jak zdrowo sie odzywiac, dieta, Zdrowie, porady o zdrowym zywieniu, sumplementacja, zdrowe dania, zrzucenie wagi, zdrowie, ukladanie jadlospisow, dietetyk online"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <article>
         <header className="w-full h-[500px] lg:h-[100vh] px-6 py-6 lg:py-10 relative bg-black bg-my_bg_image bg-cover bg-center">
@@ -109,12 +109,12 @@ export default function Home() {
           </div>
         </header>
         <section
-          id="omnie"
-          className="pt-14 px-6 flex flex-col max-w-[1400px] mx-auto"
+          id="onie"
+          className="pt-16 px-6 flex flex-col max-w-[1400px] mx-auto"
         >
           <div className="md:flex justify-between items-center">
             <div className="max-w-[700px]">
-              <h4 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
+              <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6">
                 Hej! O to kilka słów o mnie...
               </h4>
               <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
@@ -137,7 +137,7 @@ export default function Home() {
                 głównie z kobietami. Specjalizuję się w dietoterapii:
               </p>
             </div>
-            <div className="relative w-full min-w-[300px] md:max-w-[500px] h-[350px] md:h-[600px] md:ml-6 my-20 border-4 border-active">
+            <div className="relative w-full min-w-[300px] md:max-w-[500px] h-[350px] md:h-[600px] md:ml-6 border-4 border-active my-20">
               <img
                 src="/portrait.jpg"
                 alt="portrait"
@@ -145,7 +145,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <h4 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
+          <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6">
             Specjalizacje
           </h4>
           <ul className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-10 mb-6">
@@ -159,26 +159,26 @@ export default function Home() {
             Zapraszam Cię do wspólnego działania i motywowania się, aby być
             ZDROWY!
           </p>
-          <div className="relative w-full h-[200px] md:h-[300px] lg:h-[350px] my-20 border-4 border-active">
+          <div className="relative w-full h-[200px] md:h-[300px] lg:h-[350px] border-4 border-active my-20">
             <img
               src="/dish.jpg"
               alt="portrait"
               className="absolute w-full h-full object-cover object-center"
             />
           </div>
-          <div className="flex flex-col lg:flex-row md:justify-between md:items-center lg:my-14">
-            <h4 className="max-w-[700px] text-xl sm:text-2xl lg:text-3xl mb-12 md:mb-0 leading-9 sm:leading-14 lg:leading-14">
+          <div className="flex flex-col lg:flex-row md:justify-between md:items-center">
+            <h4 className="max-w-[700px] text-xl sm:text-2xl lg:text-3xl md:mb-0 leading-9 sm:leading-14 lg:leading-14 mb-6">
               Jesteś zainteresowany/ana? Zobacz oferty jakie oferuję i dowiedz
               się szczegółów
             </h4>
-            <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8  flex items-center justify-center">
+            <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 flex items-center justify-center">
               <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
                 Zobacz oferty
               </p>
             </button>
           </div>
-          <div className="w-full my-20 py-6 px-4 lg:flex lg:items-center lg:justify-between lg:px-0">
-            <div className="flex flex-col items-center mb-12 lg:mb-0">
+          <div className="w-full py-6 px-4 lg:flex lg:items-center lg:justify-between lg:px-0 my-20">
+            <div className="flex flex-col items-center mb-20 lg:mb-0">
               <BsFillPersonCheckFill size={36} className="mb-6" />
               <p className="max-w-[360px] sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-center mb-6">
                 Dostosuję dietę i godziny żywienia do twojego trybu życia
@@ -187,7 +187,7 @@ export default function Home() {
                 Inwidualne podejście
               </h4>
             </div>
-            <div className="flex flex-col items-center mb-12 lg:mb-0">
+            <div className="flex flex-col items-center mb-20 lg:mb-0">
               <FaAppleAlt size={36} className="mb-6" />
               <p className="max-w-[360px] sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-center mb-6">
                 Zdrowo i smacznie aby podróz po lepsze Ja była jak najbardziej
@@ -209,17 +209,14 @@ export default function Home() {
           </div>
         </section>
         <section id="wspolpraca" className="max-w-[1400px] mx-auto py-6 px-6">
-          <h3
-            className="
-  relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-6 md:mb-20"
-          >
+          <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium z-10 mb-12">
             Współpraca
-            <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[60px] h-[120%] -z-10 bg-light rounded-lg md:w-[80px] lg:w-[100px]" />
+            <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[70px] h-[120%] -z-10 bg-titleDecoration rounded-lg md:w-[80px] lg:w-[130px]" />
           </h3>
-          <h4 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
+          <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6">
             Współpraca, na co wzrócić uwagę?
           </h4>
-          <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-20 md:mb-20">
+          <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-12">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec massa
             venenatis in laoreet. Nunc nisl egestas adipiscing pellentesque
             congue venenatis. Aenean est dolor tincidunt eu, lacus ut
@@ -229,17 +226,17 @@ export default function Home() {
             aenean ipsum magna tristique neque. Nibh et imperdiet dolor
             consectetur vitae.
           </p>
-          <h4 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
+          <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6">
             Jak wygląda współpraca?
           </h4>
           <ul
             role="list"
-            className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6"
+            className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8"
           >
             <li
-              className="mb-12
+              className="
   first-letter:text-4xl first-letter:font-bold
-  first-letter:mr-3 first-letter:text-light"
+  first-letter:mr-3 first-letter:text-light mb-6"
             >
               1. Przed rozpoczęciem współpracy otrzymujesz do wypełnienia
               dzienniczek bieżącego notowania spożycia, w którym opisujesz co
@@ -250,9 +247,9 @@ export default function Home() {
               ocenimy pod względem jakościowym dietę
             </li>
             <li
-              className="mb-12
+              className="
   first-letter:text-4xl first-letter:font-bold
-  first-letter:mr-3 first-letter:text-light"
+  first-letter:mr-3 first-letter:text-light mb-6"
             >
               2. Niezależnie od przypadku zawsze pytam o podstawowe badania
               krwi. Pamiętaj, że nawet zdrowa osoba raz w roku powinna sprawdzić
@@ -260,9 +257,9 @@ export default function Home() {
               badania, tak aby mieć lepszy obraz stanu Twojego zdrowia.
             </li>
             <li
-              className="mb-12
+              className="
   first-letter:text-4xl first-letter:font-bold
-  first-letter:mr-3 first-letter:text-light"
+  first-letter:mr-3 first-letter:text-light mb-6"
             >
               3. Podczas pierwszej konsultacji przeprowadzam wywiad
               zdrowotno-żywieniowy w celu poznania Twojego stanu zdrowia, stylu
@@ -272,7 +269,7 @@ export default function Home() {
             <li
               className="
   first-letter:text-4xl first-letter:font-bold
-  first-letter:mr-3 mb-12 first-letter:text-light"
+  first-letter:mr-3  first-letter:text-light mb-6"
             >
               4. Po konsultacji mam 7 dni na przygotowanie indywidualnego planu
               żywieniowego dla Ciebie, który otrzymujesz na maila.
@@ -280,7 +277,7 @@ export default function Home() {
             <li
               className="
   first-letter:text-4xl first-letter:font-bold
-  first-letter:mr-3 mb-12 first-letter:text-light"
+  first-letter:mr-3  first-letter:text-light mb-6"
             >
               5. Podczas drugiej konsultacji omawiamy przygotowany przeze mnie
               plan żywieniowy. Oceniasz czy uda się go wprowadzić w życie, czy
@@ -289,7 +286,7 @@ export default function Home() {
             <li
               className="
   first-letter:text-4xl first-letter:font-bold
-  first-letter:mr-3 mb-20 first-letter:text-light"
+  first-letter:mr-3  first-letter:text-light mb-12"
             >
               6. Gdy otrzymujesz plan żywieniowy zaczynasz nowy etap w swoim
               życiu. Moim zadaniem jest wsparcie oraz motywowanie Ciebie. Mamy
@@ -299,10 +296,11 @@ export default function Home() {
               oraz wprowadzać korekty, jeśli jest to konieczne.
             </li>
           </ul>
-          <h4 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
+          <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6">
             Przykładowe dania
           </h4>
           <Swiper
+            className="mb-20"
             modules={[Navigation, Pagination]}
             spaceBetween={50}
             slidesPerView={3}
@@ -395,10 +393,11 @@ export default function Home() {
           </Swiper>
         </section>
         <section id="cennik" className="max-w-[1400px] mx-auto py-6 px-6">
-          <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-6 md:mb-20">
+          <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium z-10 mb-12">
             Cennik
+            <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[60px] h-[120%] -z-10 bg-titleDecoration rounded-lg md:w-[80px] lg:w-[100px]" />
           </h3>
-          <h4 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
+          <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6">
             Czym kierować się przy wyborze usługi?
           </h4>
           <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
@@ -407,16 +406,16 @@ export default function Home() {
             congue venenatis. Aenean est dolor tincidunt eu, lacus ut
             ullamcorper. Mauris nisl nibh suspendisse eu sagittis. Adipiscing{' '}
           </p>
-          <div className="my-12">
+          <div className="my-20">
             <div className="py-5 px-4 lg:px-6 lg:py-7 bg-cardCover rounded-lg mb-12">
               <h4 className="text-lg sm:text-xl lg:text-2xl text-light mb-6">
                 3 miesiące współpracy (6 spotkań)
               </h4>
               <div className="relative">
-                <h2 className="text-4xl lg:text-6xl text-active mb-6 lg:absolute lg:-translate-y-1/2 top-1/2 right-8">
+                <h2 className="text-4xl lg:text-6xl text-active lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6">
                   1050.00PLN
                 </h2>
-                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6 lg:max-w-[600px]">
+                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 lg:max-w-[600px] mb-12">
                   Współpraca indywidualna to rodzaj współpracy, podczas której
                   wspólnie będziemy dążyć do osiągnięcia Twoich celów. To dobry
                   wybór, jeśli wolisz pracować z ustalonym wcześniej spisem dań
@@ -456,10 +455,10 @@ export default function Home() {
                 1 miesiąc współpracy (3 spotkań)
               </h4>
               <div className="relative">
-                <h2 className="text-4xl lg:text-6xl text-active mb-6 lg:absolute lg:-translate-y-1/2 top-1/2 right-8">
+                <h2 className="text-4xl lg:text-6xl text-active  lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6">
                   350.00PLN
                 </h2>
-                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6 lg:max-w-[600px]">
+                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  lg:max-w-[600px] mb-12">
                   Współpraca indywidualna to rodzaj współpracy, podczas której
                   wspólnie będziemy dążyć do osiągnięcia Twoich celów. To dobry
                   wybór, jeśli wolisz pracować z ustalonym wcześniej spisem dań
@@ -499,10 +498,10 @@ export default function Home() {
                 Inwidualny jadłospis 7-dniowy
               </h4>
               <div className="relative">
-                <h2 className="text-4xl lg:text-6xl text-active mb-6 lg:absolute lg:-translate-y-1/2 top-1/2 right-8">
+                <h2 className="text-4xl lg:text-6xl text-active  lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6">
                   150.00PLN
                 </h2>
-                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6 lg:max-w-[600px]">
+                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  lg:max-w-[600px] mb-12">
                   Współpraca indywidualna to rodzaj współpracy, podczas której
                   wspólnie będziemy dążyć do osiągnięcia Twoich celów. To dobry
                   wybór, jeśli wolisz pracować z ustalonym wcześniej spisem dań
@@ -542,10 +541,10 @@ export default function Home() {
                 Jednorazowa konsultacja
               </h4>
               <div className="relative">
-                <h2 className="text-4xl lg:text-6xl text-active mb-6 lg:absolute lg:-translate-y-1/2 top-1/2 right-8">
+                <h2 className="text-4xl lg:text-6xl text-active  lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6">
                   100.00PLN
                 </h2>
-                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6 lg:max-w-[600px]">
+                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  lg:max-w-[600px] mb-12">
                   Współpraca indywidualna to rodzaj współpracy, podczas której
                   wspólnie będziemy dążyć do osiągnięcia Twoich celów. To dobry
                   wybór, jeśli wolisz pracować z ustalonym wcześniej spisem dań
@@ -583,10 +582,11 @@ export default function Home() {
           </div>
         </section>
         <section id="blog" className="max-w-[1400px] mx-auto px-6 py-6">
-          <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-6 md:mb-20">
+          <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium z-10 mb-12">
             Blog
+            <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[50px] h-[120%] -z-10 bg-titleDecoration rounded-lg md:w-[80px] lg:w-[80px]" />
           </h3>
-          <h4 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
+          <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6">
             Moje ostatnie przemyślenia...
           </h4>
           <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-12">
@@ -599,8 +599,8 @@ export default function Home() {
             aenean ipsum magna tristique neque.
           </p>
           <article>
-            <section className="mb-12 lg:flex lg:bg-cardCover lg:rounded-lg">
-              <div className="relative w-full h-[200px] md:h-[240px] lg:h-[360px] lg:max-w-[500px] mb-6 lg:mb-0">
+            <section className="lg:flex lg:bg-cardCover lg:rounded-lg mb-12">
+              <div className="relative w-full h-[200px] md:h-[240px] lg:h-[360px] lg:max-w-[500px] mb-6">
                 <img
                   src="slider1.jpg"
                   alt="image of blog"
@@ -611,19 +611,19 @@ export default function Home() {
                 <h4 className="text-lg sm:text-xl lg:text-2xl text-light mb-6">
                   Letnia sałatka z prostych składników
                 </h4>
-                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6 lg:text-center">
+                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 lg:text-center mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
                   massa venenatis in laoreet. Nunc nisl egestas adipiscing{' '}
                 </p>
-                <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 lg:px-24 flex items-center justify-center">
+                <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 lg:py-1 lg:px-24 flex items-center justify-center">
                   <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
                     Czytaj dalej...
                   </p>
                 </button>
               </div>
             </section>
-            <section className="mb-12 lg:flex lg:bg-cardCover lg:rounded-lg">
-              <div className="relative w-full h-[200px] md:h-[240px] lg:h-[360px] lg:max-w-[500px] mb-6 lg:mb-0">
+            <section className="lg:flex lg:bg-cardCover lg:rounded-lg mb-12">
+              <div className="relative w-full h-[200px] md:h-[240px] lg:h-[360px] lg:max-w-[500px] mb-6">
                 <img
                   src="slider3.jpg"
                   alt="image of blog"
@@ -634,18 +634,18 @@ export default function Home() {
                 <h4 className="text-lg sm:text-xl lg:text-2xl text-light mb-6">
                   Przekąski na filmowe wieczory
                 </h4>
-                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6 lg:text-center">
+                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 lg:text-center mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
                   massa venenatis in laoreet. Nunc nisl egestas adipiscing{' '}
                 </p>
-                <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 lg:px-24 flex items-center justify-center">
+                <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 lg:py-1 lg:px-24 flex items-center justify-center">
                   <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
                     Czytaj dalej...
                   </p>
                 </button>
               </div>
             </section>
-            <section className="mb-12 lg:flex lg:bg-cardCover lg:rounded-lg">
+            <section className="lg:flex lg:bg-cardCover lg:rounded-lg mb-12">
               <div className="relative w-full h-[200px] md:h-[240px] lg:h-[360px] lg:max-w-[500px] mb-6 lg:mb-0">
                 <img
                   src="slider2.jpg"
@@ -657,18 +657,18 @@ export default function Home() {
                 <h4 className="text-lg sm:text-xl lg:text-2xl text-light mb-6">
                   Sałatka z kurczakiem i pomidorami
                 </h4>
-                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6 lg:text-center">
+                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 lg:text-center mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
                   massa venenatis in laoreet. Nunc nisl egestas adipiscing{' '}
                 </p>
-                <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 lg:px-24 flex items-center justify-center">
+                <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 lg:py-1 lg:px-24 flex items-center justify-center">
                   <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
                     Czytaj dalej...
                   </p>
                 </button>
               </div>
             </section>
-            <section className="mb-12 lg:flex lg:bg-cardCover lg:rounded-lg">
+            <section className="lg:flex lg:bg-cardCover lg:rounded-lg">
               <div className="relative w-full h-[200px] md:h-[240px] lg:h-[360px] lg:max-w-[500px] mb-6 lg:mb-0">
                 <img
                   src="slider4.jpg"
@@ -680,11 +680,11 @@ export default function Home() {
                 <h4 className="text-lg sm:text-xl lg:text-2xl text-light mb-6">
                   Grillowane warzywa z dodatkami
                 </h4>
-                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6 lg:text-center">
+                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 lg:text-center mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
                   massa venenatis in laoreet. Nunc nisl egestas adipiscing{' '}
                 </p>
-                <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 lg:px-24 flex items-center justify-center">
+                <button className="border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 lg:py-1 lg:px-24 flex items-center justify-center mb-20">
                   <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
                     Czytaj dalej...
                   </p>
@@ -694,10 +694,11 @@ export default function Home() {
           </article>
         </section>
         <section id="faq" className="max-w-[1400px] mx-auto px-6 py-6">
-          <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-6 md:mb-20">
+          <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium z-10 mb-12">
             Faq
+            <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[40px] h-[120%] -z-10 bg-titleDecoration rounded-lg md:w-[80px] lg:w-[60px]" />
           </h3>
-          <h4 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
+          <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6">
             Nie znasz odpowiedzi na pytania?
           </h4>
           <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-12">
@@ -705,15 +706,15 @@ export default function Home() {
             ktorzy zadają pacjenci zazwyczaj przed pierwsza wizytą. Jeśli masz
             inne pytanie śmiało zadaj je w formularzu kontaktowym poniżej!
           </p>
-          <section className="">
-            <div className="">
-              <h3 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
+          <section>
+            <div>
+              <h3 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6">
                 Często zadawane pytania
               </h3>
               <div className="grid text-left border-t border-light md:gap-16 md:grid-cols-2">
                 <div>
-                  <div className="mb-10">
-                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light">
+                  <div className="mb-12">
+                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light mb-2">
                       <svg
                         className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
                         fill="currentColor"
@@ -742,8 +743,8 @@ export default function Home() {
                       możemy wysłać drogą e-mailową.
                     </p>
                   </div>
-                  <div className="mb-10">
-                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  text-light">
+                  <div className="mb-12">
+                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  text-light mb-2">
                       <svg
                         className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
                         fill="currentColor"
@@ -771,8 +772,8 @@ export default function Home() {
                       reguluje przemianę materii oraz likwiduje napady głodu
                     </p>
                   </div>
-                  <div className="mb-10">
-                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  text-light">
+                  <div className="mb-12">
+                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  text-light mb-2">
                       <svg
                         className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
                         fill="currentColor"
@@ -798,8 +799,8 @@ export default function Home() {
                       wizyt ustali z Tobą indywidualnie dietetyk.
                     </p>
                   </div>
-                  <div className="mb-10">
-                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  text-light">
+                  <div className="mb-12">
+                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light mb-2">
                       <svg
                         className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
                         fill="currentColor"
@@ -829,8 +830,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <div className="mb-10">
-                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  text-light">
+                  <div className="mb-12">
+                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light mb-2">
                       <svg
                         className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
                         fill="currentColor"
@@ -858,8 +859,8 @@ export default function Home() {
                       roadmap as well.
                     </p>
                   </div>
-                  <div className="mb-10">
-                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  text-light">
+                  <div className="mb-12">
+                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light mb-2">
                       <svg
                         className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
                         fill="currentColor"
@@ -891,8 +892,8 @@ export default function Home() {
                       open-source under the MIT license.
                     </p>
                   </div>
-                  <div className="mb-10">
-                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  text-light">
+                  <div className="mb-12">
+                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light mb-2">
                       <svg
                         className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
                         fill="currentColor"
@@ -919,8 +920,8 @@ export default function Home() {
                       application, marketing, and e-commerce UI interfaces.
                     </p>
                   </div>
-                  <div className="mb-10">
-                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8  text-light">
+                  <div className="mb-20">
+                    <h3 className="flex items-center sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light mb-2">
                       <svg
                         className="flex-shrink-0 mr-2 w-5 h-5"
                         fill="currentColor"
@@ -955,18 +956,199 @@ export default function Home() {
           </section>
         </section>
         <section id="kontakt" className="max-w-[1400px] mx-auto px-6 py-6">
-          <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-6 md:mb-">
+          <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-12 z-10">
             Kontakt
+            <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[60px] h-[120%] -z-10 bg-titleDecoration rounded-lg md:w-[80px] lg:w-[100px]" />
           </h3>
           <h4 className="text-xl sm:text-2xl lg:text-3xl mb-6 text-active">
             Masz pytanie? Pisz śmiało!
           </h4>
-          <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-12">
+          <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-20">
             Nie przejmuj się, o to zestaw najczęstszych pytań do dietetyków
             ktorzy zadają pacjenci zazwyczaj przed pierwsza wizytą. Jeśli masz
             inne pytanie śmiało zadaj je w formularzu kontaktowym poniżej!
           </p>
+          <form method="post" className="flex flex-col">
+            <label className="mb-6 flex items-center text-lg sm:text-xl lg:text-2xl text-light">
+              Twoje imię*
+            </label>
+            <input
+              type="text"
+              placeholder="Imię"
+              className="border-2 border-light rounded-lg bg-transparent text-light p-4 md:px-6 sm:text-lg lg:text-xl"
+            />
+            <span className="my-8 flex flex-col">
+              <label className="mb-6 flex items-center text-lg sm:text-xl lg:text-2xl text-light">
+                Adres e-mail*
+              </label>
+              <input
+                type="email"
+                placeholder="przykładowy@email.com"
+                className="border-2 border-light rounded-lg bg-transparent text-light p-4 md:px-6 sm:text-lg lg:text-xl"
+              />
+            </span>
+            <label className="mb-6 flex items-center text-lg sm:text-xl lg:text-2xl text-light">
+              Treść wiadomości*
+            </label>
+            <textarea
+              placeholder="Witam..."
+              className="mb-8 h-[160px] lg:h-[260px] border-2 border-light rounded-lg bg-transparent text-light p-4 md:p-6 sm:text-lg lg:text-xl"
+            ></textarea>
+            <button className="rounded-lg bg-cardCover text-light py-5 px-6 sm:text-lg lg:text-xl mb-20">
+              Wyślij wiadomość
+            </button>
+          </form>
         </section>
+        <footer className="lg:text-left max-w-[1400px] mx-auto">
+          <div className="flex justify-center items-center lg:justify-between p-6 border-b-2 border-light">
+            <div className="mr-12">
+              <p className="text-lg sm:text-xl lg:text-2xl">
+                Get connected with us on social networks:
+              </p>
+            </div>
+            <a href="#!" className="mr-6">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="instagram"
+                className="w-5"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div className="mx-6 py-10 text-center md:text-left">
+            <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div>
+                <h4
+                  className="
+   mb-6 text-lg sm:text-xl lg:text-2xl text-light
+          "
+                >
+                  Patrycja Janik
+                </h4>
+                <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              <div className="text-center">
+                <h4 className="mb-6 text-lg sm:text-xl lg:text-2xl text-light">
+                  Linki
+                </h4>
+                <p className="mb-6 lg:mb-8 sm:text-lg lg:text-xl hover:text-light">
+                  <a href="#omnie">O mnie</a>
+                </p>
+                <p className="mb-6 lg:mb-8 sm:text-lg lg:text-xl hover:text-light">
+                  <a href="#wspolpraca">Współpraca</a>
+                </p>
+                <p className="mb-6 lg:mb-8 sm:text-lg lg:text-xl hover:text-light">
+                  <a href="#cennik">Cennik</a>
+                </p>
+                <p className="mb-6 lg:mb-8 sm:text-lg lg:text-xl hover:text-light">
+                  <a href="#bloga">Blog</a>
+                </p>
+                <p className="sm:text-lg lg:text-xl hover:text-light">
+                  <a href="#faq">Faq</a>
+                </p>
+              </div>
+              <div className="">
+                <h4 className="mb-6 text-lg sm:text-xl lg:text-2xl text-light">
+                  Kontakt
+                </h4>
+                <p className="flex items-center justify-center md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="home"
+                    className="w-4 mr-4"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                    ></path>
+                  </svg>
+                  Opole, MS 62-277
+                </p>
+                <p className="flex items-center justify-center md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="envelope"
+                    className="w-4 mr-4"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                    ></path>
+                  </svg>
+                  przykladowy@email.com
+                </p>
+                <p className="flex items-center justify-center md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="phone"
+                    className="w-4 mr-4"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+                    ></path>
+                  </svg>
+                  + 48 251 715 188
+                </p>
+                <p className="flex items-center justify-center md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="print"
+                    className="w-4 mr-4"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"
+                    ></path>
+                  </svg>
+                  + 48 716 817 189
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center p-4 bg-cardCover md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light">
+            <span>© 2022 Copyright website created by: </span>
+            <a
+              className="text-gray-600 font-semibold"
+              href="https://tailwind-elements.com/"
+            >
+              Kowalsky429
+            </a>
+          </div>
+        </footer>
       </article>
     </div>
   );
