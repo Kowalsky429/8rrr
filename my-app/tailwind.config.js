@@ -35,7 +35,7 @@ module.exports = {
         16: '5rem',
       },
       backgroundImage: {
-        my_bg_image: "url('/header.jpg')",
+        my_bg_image: "url('/header.webp')",
       },
     },
   },

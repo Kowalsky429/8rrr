@@ -1,5 +1,5 @@
 import React from 'react';
-import { getPostDetails, getPosts } from '../../services';
+import { getPostDetails, getPosts } from '../../services/index';
 import {
   PostDetail,
   Author,
@@ -7,7 +7,7 @@ import {
   Comments,
   PostWidget,
   Categories,
-} from '../../components';
+} from '../../components/BlogPage/index';
 
 const PostDetails = ({ post }) => {
   return (
