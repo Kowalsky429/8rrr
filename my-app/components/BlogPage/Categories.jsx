@@ -11,14 +11,18 @@ function Categories() {
 
   return (
     <div className="text-white shadow-lg rounded-lg p-8 mb-8">
-      <h3 className="text-xl font-semibold">Categories</h3>
-      {categories.map((category) => (
-        <Link key={category.slug} href={`/category/${category.slug}`}>
-          <span className="cursor-pointer block pb-3 mb-3">
-            {category.name}
-          </span>
-        </Link>
-      ))}
+      <h3 className="text-lg sm:text-xl lg:text-2xl text-active mb-6">
+        Kategorie
+      </h3>
+      <div className="flex items-center">
+        {categories.map((category) => (
+          <Link key={category.slug} href={`/category/${category.slug}`}>
+            <span className="cursor-pointer mr-6 sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
+              {category.name}
+            </span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

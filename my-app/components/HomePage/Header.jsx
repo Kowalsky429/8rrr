@@ -16,13 +16,13 @@ function Header() {
       strings: [
         'Twoja podróż zaczyna się tutaj!',
         'Wiele ofert czeka na ciebie!',
-        'Dietetyk Mgr. Patrycja Janik',
+        'Dietetyk z Opola Patrycja Janik',
       ],
-      typeSpeed: 30,
-      backSpeed: 30,
+      typeSpeed: 20,
+      backSpeed: 20,
       loop: true,
       startDelay: 1000,
-      backDelay: 3000,
+      backDelay: 4000,
     };
     typed.current = new Typed(ref.current, options);
 
@@ -102,7 +102,7 @@ function Header() {
             className="text-4xl lg:text-6xl text-center text-active absolute top-0 left-1/2 -translate-x-1/2 w-full"
             ref={ref}
           ></h2>
-          <p className="lg:text-xl mt-8 text-center cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
+          <p className="lg:text-xl mt-8 text-center absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
             kliknij aby dowiedzieć się wiecej
           </p>
         </div>
