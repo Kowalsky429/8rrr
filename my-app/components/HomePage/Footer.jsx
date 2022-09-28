@@ -144,7 +144,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center p-4 bg-cardCover md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light">
+      <div className="text-center p-4 bg-black bg-opacity-20 dark:bg-opacity-30 md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light">
         <span>© 2022 Copyright website created by: </span>
         <a
           className="text-gray-600 font-semibold"

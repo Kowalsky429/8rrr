@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlogPost, PostWidget, Categories } from '../BlogPage/index';
+import { BlogPost } from '../BlogPage/index';
 
 const Blog = ({ posts }) => {
   return (
@@ -24,8 +24,6 @@ const Blog = ({ posts }) => {
         {posts.map((post) => (
           <BlogPost post={post.node} key={post.title} />
         ))}
-        <PostWidget />
-        <Categories />
       </article>
     </section>
   );

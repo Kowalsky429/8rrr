@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { IoIosArrowDown } from 'react-icons/io';
 import Typed from 'typed.js';
+import { useTheme } from 'next-themes';
 
 function Header() {
   const [state, setState] = useState(false);
-
   const ref = useRef(null);
-
   const typed = useRef(null);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const options = {
@@ -25,18 +25,22 @@ function Header() {
       backDelay: 4000,
     };
     typed.current = new Typed(ref.current, options);
-
     return () => {
       typed.current.destroy();
     };
   }, []);
+
   return (
     <header className="w-full h-[500px] lg:h-[100vh] px-5 py-6 lg:py-10 relative bg-black bg-my_bg_image bg-cover bg-center">
+      <p
+        className="absolute right-3 bottom-1 opacity-70 cursor-pointer"
+        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      >
+        Light mode
+      </p>
       <div className="relative w-full max-w-[1180px] h-full flex flex-col justify-between items-center mx-auto">
         <nav className="w-full flex items-center justify-between">
-          <div className="flex items-start">
-            <h1 className="text-xl lg:text-2xl">patkadietetycznie</h1>
-          </div>
+          <h1 className="text-xl lg:text-2xl">patkadietetycznie</h1>
           <ul className="hidden md:block lg:text-lg">
             <Link href="#omnie">
               <a className="hover:text-light">O mnie</a>
@@ -106,9 +110,11 @@ function Header() {
             kliknij aby dowiedzieć się wiecej
           </p>
         </div>
-        <div className="w-[90px] lg:w-[120px] lg:py-2 py-1 px-4 flex items-start justify-center border-3 border-white rounded-lg cursor-pointer hover:border-active">
-          <IoIosArrowDown size={30} />
-        </div>
+        <Link href="#omnie">
+          <div className="w-[90px] lg:w-[120px] lg:py-2 py-1 px-4 flex items-start justify-center border-3 border-white rounded-lg cursor-pointer hover:border-active">
+            <IoIosArrowDown size={30} />
+          </div>
+        </Link>
       </div>
     </header>
   );

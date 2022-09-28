@@ -19,22 +19,20 @@ const PostDetails = ({ post }) => {
     return <Loader />;
   }
   return (
-    <div className="container mx-auto font-kalam">
-      <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-12">
-        <div className="col-span-1 lg:col-span-8">
+    <div className="font-kalam bg-lightModeBackground dark:bg-darkModeBackground">
+      <div className="container max-w-[1400px] mx-auto">
+        <div className="mb-20">
           <PostDetail post={post} />
           <Author author={post.author} />
           <CommentsForm slug={post.slug} />
           <Comments slug={post.slug} />
         </div>
-        <div className="col-span-1 lg:col-span-4">
-          <div className="relative lg:sticky top-8">
-            <PostWidget
-              slug={post.slug}
-              categories={post.categories.map((category) => category.slug)}
-            />
-            <Categories />
-          </div>
+        <div>
+          <PostWidget
+            slug={post.slug}
+            categories={post.categories.map((category) => category.slug)}
+          />
+          <Categories />
         </div>
       </div>
       <FeaturedPosts />

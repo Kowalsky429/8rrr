@@ -58,10 +58,10 @@ const AboutMe = () => {
       <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light">
         Zapraszam Cię do wspólnego działania i motywowania się, aby być ZDROWY!
       </p>
-      <div className="relative w-full h-[200px] md:h-[300px] lg:h-[350px] my-12 lg:my-40 border-4 border-active opacity-30">
+      <div className="relative w-full h-[200px] md:h-[300px] lg:h-[350px] my-12 lg:my-40 border-4 border-active dark:opacity-30">
         <img
           src="/s.jpg"
-          alt="portrait"
+          alt="image of dish"
           className="absolute w-full h-full object-cover object-center"
           loading="lazy"
         />

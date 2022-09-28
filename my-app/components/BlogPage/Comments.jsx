@@ -19,11 +19,13 @@ const Comments = ({ slug }) => {
           <h3 className="text-xl mb-6">{comments.length} Komentarzy</h3>
           {comments.map((comment, index) => (
             <div key={index}>
-              <p className="mb-4">
-                <span className="font-semibold text-light">{comment.name}</span>{' '}
+              <p className="mb-4 sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9">
+                <span className="font-semibold text-light sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9">
+                  {comment.name}
+                </span>{' '}
                 on {moment(comment.createdAt).format('MMM DD, YYYY')}
               </p>
-              <p className="whitespace-pre-line w-full">
+              <p className="whitespace-pre-line w-full sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9">
                 Wiadomość: {parse(comment.comment)}
               </p>
             </div>

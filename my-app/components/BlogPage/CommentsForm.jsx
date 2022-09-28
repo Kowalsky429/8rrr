@@ -50,17 +50,17 @@ function CommentsForm({ slug }) {
       <div className="grid grid-cols-1 grid-gap-4">
         <textarea
           ref={commentEl}
-          className="border-2 border-light rounded-lg bg-transparent text-light p-4 md:px-6 sm:text-lg lg:text-xl"
-          placeholder="Comment"
+          className="border-2 border-light rounded-lg bg-transparent text-light p-4 md:px-6 sm:text-lg lg:text-xl h-[200px] lg:h-[300px]"
+          placeholder="Komentarz..."
           name="comment"
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 grid-gap-4 mb-6">
+      <div className="grid grid-cols-1 grid-gap-4 mb-6">
         <input
           type="text"
           ref={nameEl}
           className="border-2 border-light rounded-lg bg-transparent text-light p-4 md:px-6 sm:text-lg lg:text-xl my-8"
-          placeholder="Name"
+          placeholder="Imię"
           name="name"
         />
         <input
@@ -81,25 +81,31 @@ function CommentsForm({ slug }) {
             value="true"
           />
           <label
-            className="text-active cursor-pointer ml-2"
+            className="text-active cursor-pointer ml-2 leading-9"
             htmlFor="storeData"
           >
-            Save my email and name for the next time comment
+            Zapisz mój e-mail oraz imię do następnego komentarza
           </label>
         </div>
       </div>
-      {error && <p className="text-xs text-active">All fields are required.</p>}
+      {error && (
+        <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9 text-warn">
+          Wszystkie pola są wymagane!
+        </p>
+      )}
       <div className="mt-8">
         <button
           type="button"
           onClick={handleCommentSubmission}
-          className="bg-titleDecoration transition duration-500 ease hover:bg-titleDecoration px-8 py-3 cursor-pointer rounded-lg"
+          className="bg-titleDecoration hover:bg-cardCover px-8 py-2 cursor-pointer rounded-lg lg:px-16 lg:py-2"
         >
-          Post Comment
+          <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9">
+            Dodaj komentarz
+          </p>
         </button>
         {showSuccessMessage && (
           <span className="text-xl flat-right font-semibold text-active mt-3">
-            Comment Submited for review
+            Komentarz wysłany do akceptacji!
           </span>
         )}
       </div>

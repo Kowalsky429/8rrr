@@ -17,7 +17,7 @@ function PriceList() {
         nisl nibh suspendisse eu sagittis. Adipiscing{' '}
       </p>
       <div className="my-12">
-        <div className="py-5 px-4 lg:px-6 lg:py-7 bg-cardCover rounded-lg mb-12">
+        <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-20 dark:bg-opacity-30 rounded-lg mb-12">
           <h4 className="text-lg sm:text-xl lg:text-2xl text-light mb-6 lg:mb-12">
             3 miesiące współpracy (6 spotkań)
           </h4>
@@ -55,7 +55,7 @@ function PriceList() {
             </li>
           </ul>
         </div>
-        <div className="py-5 px-4 lg:px-6 lg:py-7 bg-cardCover rounded-lg mb-12">
+        <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-20 dark:bg-opacity-30 rounded-lg mb-12">
           <h4 className="text-lg sm:text-xl lg:text-2xl text-light mb-6 lg:mb-12">
             1 miesiąc współpracy (3 spotkań)
           </h4>
@@ -93,7 +93,7 @@ function PriceList() {
             </li>
           </ul>
         </div>
-        <div className="py-5 px-4 lg:px-6 lg:py-7 bg-cardCover rounded-lg mb-12">
+        <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-20 dark:bg-opacity-30 rounded-lg mb-12">
           <h4 className="text-lg sm:text-xl lg:text-2xl text-light mb-6 lg:mb-12">
             Inwidualny jadłospis 7-dniowy
           </h4>
@@ -131,7 +131,7 @@ function PriceList() {
             </li>
           </ul>
         </div>
-        <div className="py-5 px-4 lg:px-6 lg:py-7 bg-cardCover rounded-lg">
+        <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-20 dark:bg-opacity-30 rounded-lg">
           <h4 className="text-lg sm:text-xl lg:text-2xl text-light mb-6 lg:mb-12">
             Jednorazowa konsultacja
           </h4>

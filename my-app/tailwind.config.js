@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -19,6 +20,9 @@ module.exports = {
       menuCover: 'rgba(0,0,0,0.9)',
       cardCover: 'rgba(0,0,0,0.3)',
       titleDecoration: 'rgba(255,255,255,0.1)',
+      warn: 'crimson',
+      lightModeBackground: '#524f48',
+      darkModeBackground: '#161616',
     },
     fontFamily: {
       kalam: ['Kalam', 'cursive'],

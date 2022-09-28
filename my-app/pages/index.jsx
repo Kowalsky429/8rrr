@@ -13,7 +13,7 @@ import {
 
 export default function Home({ posts }) {
   return (
-    <div className="w-full font-kalam bg-grey text-white">
+    <div className="w-full font-kalam bg-lightModeBackground dark:bg-darkModeBackground text-white">
       <Head>
         <title>patkadietetycznie</title>
         <meta

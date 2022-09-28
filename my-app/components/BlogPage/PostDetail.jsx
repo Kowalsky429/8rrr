@@ -1,7 +1,9 @@
 import React from 'react';
 import moment from 'moment';
+import { useTheme } from 'next-themes';
 
 function PostDetail({ post }) {
+  const { theme, setTheme } = useTheme();
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 
@@ -56,6 +58,7 @@ function PostDetail({ post }) {
             width={obj.width}
             src={obj.src}
             loading="lazy"
+            className="h-[400px] object-cover object-center rounded-lg my-12 lg:my-24"
           />
         );
       default:
@@ -64,15 +67,15 @@ function PostDetail({ post }) {
   };
 
   return (
-    <div className="lg:shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
-      <div className="relative mb-12 w-full">
+    <div className="lg:py-8 pb-12 mb-8">
+      <div className="relative mb-12 w-full h-[300px] md:h-[400px]">
         <img
           src={post.image.url}
           alt="image"
-          className="w-full object-cover h-[300px] object-center rounded-lg"
+          className="absolute w-full h-full object-cover object-center lg:rounded-lg"
         />
       </div>
-      <div className="px-5">
+      <div className="px-5 lg:px-0">
         <div className="flex items-center mb-8 w-full">
           <div className="hidden md:flex justify-center lg:mb-0 lg:w-auto mr-8 items-center">
             <img
@@ -90,7 +93,7 @@ function PostDetail({ post }) {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 inline mr-2 text-pink-500"
-              fill="black"
+              fill={`${theme === 'light' ? '#524f48' : '#161616'}`}
               viewBox="0 0 24 24"
               stroke="white"
             >

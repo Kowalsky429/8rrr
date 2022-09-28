@@ -41,7 +41,7 @@ function Contact() {
           placeholder="Witam..."
           className="mb-8 h-[200px] lg:h-[260px] border-2 border-light rounded-lg bg-transparent text-light p-4 md:p-6 sm:text-lg lg:text-xl"
         ></textarea>
-        <button className="rounded-lg bg-cardCover text-light py-5 px-6 sm:text-lg lg:text-xl mb-12 lg:mb-40 hover:bg-titleDecoration">
+        <button className="rounded-lg  bg-black bg-opacity-20 dark:bg-opacity-30 text-light py-5 px-6 sm:text-lg lg:text-xl mb-12 lg:mb-40 hover:bg-titleDecoration">
           Wyślij wiadomość
         </button>
       </form>
