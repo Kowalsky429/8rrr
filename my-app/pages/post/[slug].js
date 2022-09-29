@@ -27,7 +27,7 @@ const PostDetails = ({ post }) => {
           <CommentsForm slug={post.slug} />
           <Comments slug={post.slug} />
         </div>
-        <div>
+        <div className="px-5 lg:px-0">
           <PostWidget
             slug={post.slug}
             categories={post.categories.map((category) => category.slug)}

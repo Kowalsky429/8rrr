@@ -11,7 +11,7 @@ const AboutMe = () => {
     >
       <div className="md:flex justify-between items-center">
         <div className="max-w-[700px]">
-          <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-12">
+          <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-8">
             Hej! O to kilka słów o mnie...
           </h4>
           <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9">
@@ -42,12 +42,12 @@ const AboutMe = () => {
           />
         </div>
       </div>
-      <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-12">
+      <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-8">
         Specjalizacje
       </h4>
       <ul
         role="list"
-        className="marker:text-light list-disc pl-4 space-y-3 sm:text-lg sm:leading-10 lg:text-xl lg:leading-14 leading-9 mb-6 lg:mb-12"
+        className="marker:text-light list-disc pl-4 space-y-3 sm:text-lg sm:leading-10 lg:text-xl lg:leading-14 leading-9 mb-6 lg:mb-8"
       >
         <li>Niedoczynności tarczycy i Hashimoto</li>
         <li>Trądziku hormonalnego</li>
@@ -58,9 +58,9 @@ const AboutMe = () => {
       <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light">
         Zapraszam Cię do wspólnego działania i motywowania się, aby być ZDROWY!
       </p>
-      <div className="relative w-full h-[200px] md:h-[300px] lg:h-[350px] my-12 lg:my-40 border-4 border-active dark:opacity-30">
+      <div className="relative w-full h-[200px] md:h-[300px] lg:h-[350px] my-12 lg:my-24 border-4 border-active dark:opacity-30">
         <img
-          src="/s.jpg"
+          src="/baner.webp"
           alt="image of dish"
           className="absolute w-full h-full object-cover object-center"
           loading="lazy"
@@ -79,7 +79,7 @@ const AboutMe = () => {
           </button>
         </Link>
       </div>
-      <div className="w-full py-6 px-4 lg:flex lg:items-center lg:justify-between lg:px-0 my-12 lg:my-40">
+      <div className="w-full py-6 px-4 lg:flex lg:items-center lg:justify-between lg:px-0 my-12 lg:my-24">
         <div className="flex flex-col items-center mb-20 lg:mb-0">
           <BsFillPersonCheckFill size={36} className="mb-6" />
           <p className="max-w-[360px] sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9 text-center mb-6">

@@ -1,9 +1,7 @@
 import React from 'react';
 import moment from 'moment';
-import { useTheme } from 'next-themes';
 
 function PostDetail({ post }) {
-  const { theme, setTheme } = useTheme();
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 
@@ -93,7 +91,7 @@ function PostDetail({ post }) {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 inline mr-2 text-pink-500"
-              fill={`${theme === 'light' ? '#524f48' : '#161616'}`}
+              fill="transparent"
               viewBox="0 0 24 24"
               stroke="white"
             >

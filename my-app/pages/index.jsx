@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { getPosts } from '../services';
 import {
   Header,
   AboutMe,
@@ -11,7 +10,7 @@ import {
   Footer,
 } from '../components/HomePage';
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <div className="w-full font-kalam bg-lightModeBackground dark:bg-darkModeBackground text-white">
       <Head>
@@ -31,19 +30,11 @@ export default function Home({ posts }) {
         <AboutMe />
         <Cooperation />
         <PriceList />
-        <Blog posts={posts} />
+        <Blog />
         <Faq />
         <Contact />
         <Footer />
       </article>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const posts = await getPosts();
-
-  return {
-    props: { posts },
-  };
 }

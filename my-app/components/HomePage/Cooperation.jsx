@@ -11,7 +11,7 @@ function Cooperation() {
     <section id="wspolpraca" className="max-w-[1400px] mx-auto py-6 px-5">
       <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium z-10 mb-12 lg:mb-24">
         Współpraca
-        <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[70px] h-[120%] -z-10 bg-titleDecoration rounded-lg md:w-[80px] lg:w-[130px]" />
+        <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[70px] h-[120%] -z-10 bg-white bg-opacity-10 rounded-lg md:w-[80px] lg:w-[130px]" />
       </h3>
       <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-12">
         Współpraca, na co wzrócić uwagę?
@@ -118,9 +118,9 @@ function Cooperation() {
         }}
       >
         <SwiperSlide>
-          <div className="relative w-full h-[220px] md:h-[400px] bg-grey text-white rounded-lg">
+          <div className="relative w-full h-[220px] md:h-[320px] bg-grey text-white rounded-lg">
             <img
-              src="/slider1.webp"
+              src="/swiper6.webp"
               className="absolute w-[100%] h-[100%] object-cover rounded-lg"
               alt="image of dish"
               loading="lazy"
@@ -128,9 +128,9 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-full h-[220px] md:h-[400px] bg-grey text-white rounded-lg">
+          <div className="relative w-full h-[220px] md:h-[320px] bg-grey text-white rounded-lg">
             <img
-              src="/slider2.webp"
+              src="/swiper2.webp"
               className="absolute w-[100%] h-[100%] object-cover rounded-lg"
               alt="image of dish"
               loading="lazy"
@@ -138,9 +138,9 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-full h-[220px] md:h-[400px] bg-grey text-white rounded-lg">
+          <div className="relative w-full h-[220px] md:h-[320px] bg-grey text-white rounded-lg">
             <img
-              src="/slider3.webp"
+              src="/swiper3.webp"
               className="absolute w-[100%] h-[100%] object-cover rounded-lg"
               alt="image of dish"
               loading="lazy"
@@ -148,9 +148,9 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-full h-[220px] md:h-[400px] bg-grey text-white rounded-lg">
+          <div className="relative w-full h-[220px] md:h-[320px] bg-grey text-white rounded-lg">
             <img
-              src="/slider4.webp"
+              src="/swiper4.webp"
               className="absolute w-[100%] h-[100%] object-cover rounded-lg"
               alt="image of dish"
               loading="lazy"
@@ -158,9 +158,9 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-full h-[220px] md:h-[400px] bg-grey text-white rounded-lg">
+          <div className="relative w-full h-[220px] md:h-[320px] bg-grey text-white rounded-lg">
             <img
-              src="/slider5.webp"
+              src="/swiper5.webp"
               className="absolute w-[100%] h-[100%] object-cover rounded-lg"
               alt="image of dish"
               loading="lazy"
@@ -168,29 +168,9 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-full h-[220px] md:h-[400px] bg-grey text-white rounded-lg">
+          <div className="relative w-full h-[220px] md:h-[320px] bg-grey text-white rounded-lg">
             <img
-              src="/slider2.webp"
-              className="absolute w-[100%] h-[100%] object-cover rounded-lg"
-              alt="image of dish"
-              loading="lazy"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative w-full h-[220px] md:h-[400px] bg-grey text-white rounded-lg">
-            <img
-              src="/slider1.webp"
-              className="absolute w-[100%] h-[100%] object-cover rounded-lg"
-              alt="image of dish"
-              loading="lazy"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative w-full h-[220px] md:h-[400px] bg-grey text-white rounded-lg">
-            <img
-              src="/slider4.webp"
+              src="/swiper6.webp"
               className="absolute w-[100%] h-[100%] object-cover rounded-lg"
               alt="image of dish"
               loading="lazy"

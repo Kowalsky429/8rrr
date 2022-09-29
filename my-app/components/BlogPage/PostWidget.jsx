@@ -17,13 +17,15 @@ const PostWidget = ({ categories, slug }) => {
     }
   }, [slug]);
 
+  console.log(relatedPosts);
+
   return (
     <div className="text-white mb-6">
       <h3 className="text-lg sm:text-xl lg:text-2xl text-active mb-6">
         {slug ? 'Powiązane artykuły' : 'Ostatnie artykuły'}
       </h3>
-      {relatedPosts.map((post) => (
-        <section className="mb-12 lg:mb-24">
+      {relatedPosts.map((post, index) => (
+        <section className="mb-12 lg:mb-24" key={index}>
           <div className="relative w-full h-[200px] md:h-[240px] lg:min-h-[320px] mb-6">
             <img
               src={post.image.url}

@@ -45,8 +45,8 @@ function CommentsForm({ slug }) {
   };
 
   return (
-    <div className="bg-cardCover text-white shadow-lg rounded-lg py-8 pb-12 mb-8 px-5">
-      <h3 className="text-xl mb-6">Zostaw komentarz</h3>
+    <div className="bg-black bg-opacity-30 text-white shadow-lg rounded-lg py-8 pb-12 mb-8 px-5">
+      <h3 className="text-xl lg:text-2xl mb-6">Zostaw komentarz</h3>
       <div className="grid grid-cols-1 grid-gap-4">
         <textarea
           ref={commentEl}
@@ -97,14 +97,14 @@ function CommentsForm({ slug }) {
         <button
           type="button"
           onClick={handleCommentSubmission}
-          className="bg-titleDecoration hover:bg-cardCover px-8 py-2 cursor-pointer rounded-lg lg:px-16 lg:py-2"
+          className="bg-white bg-opacity-10 hover:bg-opacity-30 px-8 py-2 cursor-pointer rounded-lg lg:px-16 lg:py-2"
         >
           <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9">
             Dodaj komentarz
           </p>
         </button>
         {showSuccessMessage && (
-          <span className="text-xl flat-right font-semibold text-active mt-3">
+          <span className="text-xl flat-right font-semibold text-active ml-3">
             Komentarz wysłany do akceptacji!
           </span>
         )}

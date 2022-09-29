@@ -38,7 +38,7 @@ const Footer = () => {
               >
                 Patrycja Janik
               </h4>
-              <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
+              <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9">
                 Specjalista z okolic Opola, który zajmuje się indywidualnym
                 doborem diety oraz wsparciem w wypracowaniu odpowiednich nawyków
                 żywieniowych.

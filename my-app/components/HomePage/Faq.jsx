@@ -5,9 +5,9 @@ function Faq() {
     <section id="faq" className="max-w-[1400px] mx-auto px-6 py-6">
       <h3 className="relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium z-10 mb-12 lg:mb-24">
         Faq
-        <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[40px] h-[120%] -z-10 bg-titleDecoration rounded-lg md:w-[80px] lg:w-[60px]" />
+        <div className="absolute top-[40%] left-[50%] -translate-y-1/2 w-[40px] h-[120%] -z-10 bg-white bg-opacity-10 rounded-lg md:w-[80px] lg:w-[60px]" />
       </h3>
-      <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-12">
+      <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-8">
         Nie znasz odpowiedzi na pytania?
       </h4>
       <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9 mb-12 lg:mb-24">
@@ -17,7 +17,7 @@ function Faq() {
       </p>
       <section>
         <div>
-          <h3 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-12">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-8">
             Często zadawane pytania
           </h3>
           <div className="grid text-left border-t border-light md:gap-16 md:grid-cols-2">

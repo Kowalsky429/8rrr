@@ -46,7 +46,3 @@ textarea {
 .typed-cursor {
   opacity: 0 !important;
 }
-
-.display-none {
-  @apply hidden;
-}

@@ -39,6 +39,27 @@ export const getPosts = async () => {
   return result.postsConnection.edges;
 };
 
+export const getCarouselImages = async () => {
+  const query = gql`
+    query {
+      carouselImagesConnection {
+        edges {
+          node {
+            image {
+              id
+              url
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.carouselImagesConnection.edges;
+};
+
 export const getCategories = async () => {
   const query = gql`
     query GetGategories {
