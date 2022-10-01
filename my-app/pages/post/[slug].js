@@ -20,14 +20,14 @@ const PostDetails = ({ post }) => {
   }
   return (
     <div className="font-kalam bg-lightModeBackground dark:bg-darkModeBackground">
-      <div className="container max-w-[1400px] mx-auto">
+      <div className="container max-w-[1400px] lg:px-5 mx-auto">
         <div className="mb-20">
           <PostDetail post={post} />
           <Author author={post.author} />
           <CommentsForm slug={post.slug} />
           <Comments slug={post.slug} />
         </div>
-        <div className="px-5 lg:px-0">
+        <div>
           <PostWidget
             slug={post.slug}
             categories={post.categories.map((category) => category.slug)}

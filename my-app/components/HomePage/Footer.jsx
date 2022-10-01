@@ -6,11 +6,13 @@ const Footer = () => {
       <div className="max-w-[1400px] mx-auto">
         <div className="flex justify-center items-center lg:justify-between p-6 border-b-2 border-light">
           <div className="mr-12">
-            <p className="text-lg sm:text-xl lg:text-2xl">
-              Odwiedź również moje social media:
-            </p>
+            <h5 className="text-white">Odwiedź również moje social media:</h5>
           </div>
-          <a href="#!" className="mr-6">
+          <a
+            href="https://www.instagram.com/patrycjajanik_/"
+            className="mr-6"
+            target="_blank"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
@@ -31,44 +33,34 @@ const Footer = () => {
         <div className="mx-6 py-10 lg:py-20 text-center md:text-left">
           <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
-              <h4
-                className="
-   mb-6 text-lg sm:text-xl lg:text-2xl text-light
-          "
-              >
-                Patrycja Janik
-              </h4>
-              <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9">
+              <h5 className="mb-6">Patrycja Janik</h5>
+              <p>
                 Specjalista z okolic Opola, który zajmuje się indywidualnym
                 doborem diety oraz wsparciem w wypracowaniu odpowiednich nawyków
                 żywieniowych.
               </p>
             </div>
             <div className="text-center">
-              <h4 className="mb-6 text-lg sm:text-xl lg:text-2xl text-light">
-                Linki
-              </h4>
-              <p className="mb-6 lg:mb-8 sm:text-lg lg:text-xl hover:text-light">
+              <h5 className="mb-6">Linki</h5>
+              <p className="mb-6 lg:mb-8 hover:text-light">
                 <a href="#omnie">O mnie</a>
               </p>
-              <p className="mb-6 lg:mb-8 sm:text-lg lg:text-xl hover:text-light">
+              <p className="mb-6 lg:mb-8 hover:text-light">
                 <a href="#wspolpraca">Współpraca</a>
               </p>
-              <p className="mb-6 lg:mb-8 sm:text-lg lg:text-xl hover:text-light">
+              <p className="mb-6 lg:mb-8 hover:text-light">
                 <a href="#cennik">Cennik</a>
               </p>
-              <p className="mb-6 lg:mb-8 sm:text-lg lg:text-xl hover:text-light">
+              <p className="mb-6 lg:mb-8 hover:text-light">
                 <a href="#bloga">Blog</a>
               </p>
-              <p className="sm:text-lg lg:text-xl hover:text-light">
+              <p className="hover:text-light">
                 <a href="#faq">Faq</a>
               </p>
             </div>
-            <div className="">
-              <h4 className="mb-6 text-lg sm:text-xl lg:text-2xl text-light">
-                Kontakt
-              </h4>
-              <p className="flex items-center justify-center md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6">
+            <div>
+              <h5 className="mb-6">Kontakt</h5>
+              <p className="flex items-center justify-center md:justify-start mb-6">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -86,7 +78,7 @@ const Footer = () => {
                 </svg>
                 Opole, MS 62-277
               </p>
-              <p className="flex items-center justify-center md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6">
+              <p className="flex items-center justify-center md:justify-start mb-6">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -104,7 +96,7 @@ const Footer = () => {
                 </svg>
                 przykladowy@email.com
               </p>
-              <p className="flex items-center justify-center md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 mb-6">
+              <p className="flex items-center justify-center md:justify-start mb-6">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -122,7 +114,7 @@ const Footer = () => {
                 </svg>
                 + 48 251 715 188
               </p>
-              <p className="flex items-center justify-center md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8">
+              <p className="flex items-center justify-center md:justify-start mb-6">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -144,14 +136,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center p-4 bg-black bg-opacity-20 dark:bg-opacity-30 md:justify-start sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 text-light">
-        <span>© 2022 Copyright website created by: </span>
-        <a
-          className="text-gray-600 font-semibold"
-          href="https://github.com/Kowalsky429"
-        >
-          Kowalsky429
-        </a>
+      <div className="text-center p-4 bg-black bg-opacity-20 dark:bg-opacity-30 md:justify-start text-light">
+        <p>
+          © 2022 Copyright website created by:{' '}
+          <a className="font-semibold" href="https://github.com/Kowalsky429">
+            Kowalsky429
+          </a>
+        </p>
       </div>
     </footer>
   );

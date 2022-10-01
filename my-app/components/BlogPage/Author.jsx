@@ -10,16 +10,12 @@ function Author({ author }) {
           unoptimized
           width="100px"
           height="100px"
-          className="align-middle rounded-full"
+          className="bigauthor"
           src={author.photo.url}
         />
       </div>
-      <h4 className="text-lg sm:text-xl lg:text-2xl text-light my-6">
-        {author.name}
-      </h4>
-      <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9 text-white max-w-[800px] mx-auto">
-        {author.bio}
-      </p>
+      <h5 className="my-6">{author.name}</h5>
+      <p className="max-w-[800px] mx-auto">{author.bio}</p>
     </div>
   );
 }

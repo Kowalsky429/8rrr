@@ -22,7 +22,7 @@ function PostDetail({ post }) {
     switch (type) {
       case 'heading-three':
         return (
-          <h3 key={index} className="text-white text-xl font-semibold mb-4">
+          <h3 key={index} className="text-white">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -30,10 +30,7 @@ function PostDetail({ post }) {
         );
       case 'paragraph':
         return (
-          <p
-            key={index}
-            className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9 text-white"
-          >
+          <p key={index} className="text-white">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -41,7 +38,7 @@ function PostDetail({ post }) {
         );
       case 'heading-four':
         return (
-          <h4 key={index} className="text-white text-md font-semibold mb-4">
+          <h4 key={index} className="text-white">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
@@ -56,7 +53,7 @@ function PostDetail({ post }) {
             width={obj.width}
             src={obj.src}
             loading="lazy"
-            className="h-[400px] object-cover object-center rounded-lg my-12 lg:my-24"
+            className="h-[300px] lg:h-[400px] object-cover object-center rounded-lg my-12 lg:my-24"
           />
         );
       default:
@@ -67,11 +64,7 @@ function PostDetail({ post }) {
   return (
     <div className="lg:py-8 pb-12 mb-8">
       <div className="relative mb-12 w-full h-[300px] md:h-[400px]">
-        <img
-          src={post.image.url}
-          alt="image"
-          className="absolute w-full h-full object-cover object-center lg:rounded-lg"
-        />
+        <img src={post.image.url} alt="image" className="lg:rounded-lg" />
       </div>
       <div className="px-5 lg:px-0">
         <div className="flex items-center mb-8 w-full">
@@ -80,14 +73,12 @@ function PostDetail({ post }) {
               alt={post.author.name}
               height="30px"
               width="30px"
-              className="align-middle rounded-full"
+              className="smallauthor"
               src={post.author.photo.url}
             />
-            <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9 text-white ml-3">
-              {post.author.name}
-            </p>
+            <p className="text-white ml-3">{post.author.name}</p>
           </div>
-          <div className="font-medium text-gray-700">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 inline mr-2 text-pink-500"
@@ -107,9 +98,7 @@ function PostDetail({ post }) {
             </span>
           </div>
         </div>
-        <h4 className="text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-12">
-          {post.title}
-        </h4>
+        <h4 className="lg:mb-12">{post.title}</h4>
         {post.content.raw.children.map((typeObj, index) => {
           const children = typeObj.children.map((item, itemindex) =>
             getContentFragment(itemindex, item.text, item)

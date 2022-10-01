@@ -23,6 +23,60 @@ a {
   box-sizing: border-box;
 }
 
+img.smallauthor {
+  @apply relative align-middle rounded-full w-[30px] h-[30px] !important;
+}
+
+img.bigauthor {
+  @apply relative align-middle rounded-full w-[100px] h-[100px] !important;
+}
+
+img {
+  @apply absolute w-full h-full object-cover object-center;
+}
+
+h3 {
+  @apply relative text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium z-10 mb-12 lg:mb-24;
+}
+
+h3 div {
+  @apply absolute top-[40%] left-[50%] -translate-y-1/2 w-[50px] h-[120%] -z-10 bg-white bg-opacity-10 rounded-lg md:w-[80px] lg:w-[80px];
+}
+
+h4 {
+  @apply text-xl sm:text-2xl lg:text-3xl text-active mb-6 lg:mb-8;
+}
+
+h5 {
+  @apply text-lg sm:text-xl lg:text-2xl text-light;
+}
+
+p {
+  @apply sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9;
+}
+
+input[type='checkbox'] {
+  @apply inline !important;
+}
+
+button,
+input,
+textarea {
+  @apply border-2 border-light rounded-lg bg-transparent text-light py-2 px-8 flex items-center justify-center hover:border-active hover:text-active;
+}
+
+ul {
+  @apply marker:text-light list-disc pl-4 space-y-3 sm:text-lg sm:leading-10 lg:text-xl lg:leading-14 leading-9;
+}
+
+ol {
+  @apply sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9;
+}
+ol li {
+  @apply first-letter:text-4xl first-letter:font-bold
+  first-letter:mr-3 first-letter:text-light mb-8 lg:mb-12;
+}
+
 .activeMenu {
   position: absolute;
   top: 0;

@@ -19,6 +19,7 @@ module.exports = {
       light: '#F5D9B6',
       warn: 'crimson',
       lightModeBackground: '#524f48',
+      // lightModeBackground: '#ccb68f',
       darkModeBackground: '#161616',
     },
     fontFamily: {

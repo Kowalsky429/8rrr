@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 
 import { getCategories, getCategoryPost } from '../../services/index';
-import { PostCard, Categories, Loader } from '../../components/BlogPage/index';
+import { Categories, Loader, BlogPost } from '../../components/BlogPage/index';
 
 const CategoryPost = ({ posts }) => {
   const router = useRouter();
@@ -13,20 +13,18 @@ const CategoryPost = ({ posts }) => {
   }
 
   return (
-    <div className="bg-lightModeBackground dark:bg-darkModeBackground px-5 pt-10 -mb-12 lg:-mb-24 font-kalam min-h-[100vh]">
+    <div className="bg-lightModeBackground dark:bg-darkModeBackground px-5 pt-10 mb-12 lg:-mb-16 font-kalam min-h-[100vh]">
       <div className="container max-w-[1400px] mx-auto">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl text-center text-active mb-12 capitalize">
-          {slug}
-        </h1>
+        <h3 className="text-light lg:text-4xl mb-12 capitalize">{slug}</h3>
         <Categories />
         <div>
           {posts.length < 1 && (
-            <p className="sm:text-lg lg:text-xl leading-8 text-center text-white">
+            <p className="text-center">
               Aktualnie brak postów w kategori {slug}
             </p>
           )}
           {posts.map((post, index) => (
-            <PostCard key={index} post={post.node} />
+            <BlogPost key={index} post={post.node} />
           ))}
         </div>
       </div>

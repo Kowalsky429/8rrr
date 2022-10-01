@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="w-full font-kalam bg-lightModeBackground dark:bg-darkModeBackground text-white">
       <Head>
-        <title>patkadietetycznie</title>
+        <title>patkadietetycznie - Patrycja Janik Dietetyk</title>
         <meta
           name="description"
           content="Indywidualnie dopasowane diety odchudzające. Wejdź na stronę i sprawdź adres gabinetu! Z nami zrzucisz zbędne kilogramy i pozbędziesz się nadwagi!..."
@@ -25,14 +25,16 @@ export default function Home() {
         />
         <link rel="icon" href="/icon.png" />
       </Head>
-      <article>
+      <article className="w-full">
         <Header />
-        <AboutMe />
-        <Cooperation />
-        <PriceList />
-        <Blog />
-        <Faq />
-        <Contact />
+        <div className="px-5 max-w-[1400px] mx-auto">
+          <AboutMe />
+          <Cooperation />
+          <PriceList />
+          <Blog />
+          <Faq />
+          <Contact />
+        </div>
         <Footer />
       </article>
     </div>

@@ -3,7 +3,6 @@ import { submitComment } from '../../services';
 
 function CommentsForm({ slug }) {
   const [error, setError] = useState(false);
-  const [localStorage, setLocalStorage] = useState(null);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const commentEl = useRef();
   const nameEl = useRef();
@@ -46,11 +45,11 @@ function CommentsForm({ slug }) {
 
   return (
     <div className="bg-black bg-opacity-30 text-white shadow-lg rounded-lg py-8 pb-12 mb-8 px-5">
-      <h3 className="text-xl lg:text-2xl mb-6">Zostaw komentarz</h3>
+      <h5 className="mb-6 text-white">Zostaw komentarz</h5>
       <div className="grid grid-cols-1 grid-gap-4">
         <textarea
           ref={commentEl}
-          className="border-2 border-light rounded-lg bg-transparent text-light p-4 md:px-6 sm:text-lg lg:text-xl h-[200px] lg:h-[300px]"
+          className="p-4 md:px-6 h-[200px] lg:h-[300px] sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9"
           placeholder="Komentarz..."
           name="comment"
         />
@@ -59,14 +58,14 @@ function CommentsForm({ slug }) {
         <input
           type="text"
           ref={nameEl}
-          className="border-2 border-light rounded-lg bg-transparent text-light p-4 md:px-6 sm:text-lg lg:text-xl my-8"
+          className="p-4 my-8 sm:text-lg lg:text-xl"
           placeholder="Imię"
           name="name"
         />
         <input
           type="text"
           ref={emailEl}
-          className="border-2 border-light rounded-lg bg-transparent text-light p-4 md:px-6 sm:text-lg lg:text-xl"
+          className="p-4 md:px-6 sm:text-lg lg:text-xl"
           placeholder="Email"
           name="email"
         />
@@ -88,25 +87,17 @@ function CommentsForm({ slug }) {
           </label>
         </div>
       </div>
-      {error && (
-        <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9 text-warn">
-          Wszystkie pola są wymagane!
-        </p>
-      )}
-      <div className="mt-8">
+      {error && <p className="text-warn">Wszystkie pola są wymagane!</p>}
+      <div className="mt-8 flex items-center">
         <button
           type="button"
           onClick={handleCommentSubmission}
-          className="bg-white bg-opacity-10 hover:bg-opacity-30 px-8 py-2 cursor-pointer rounded-lg lg:px-16 lg:py-2"
+          className="bg-white border-none bg-opacity-10 hover:bg-opacity-30 hover:text-light"
         >
-          <p className="sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9">
-            Dodaj komentarz
-          </p>
+          <p>Dodaj komentarz</p>
         </button>
         {showSuccessMessage && (
-          <span className="text-xl flat-right font-semibold text-active ml-3">
-            Komentarz wysłany do akceptacji!
-          </span>
+          <h5 className="ml-5">Komentarz wysłany do akceptacji!</h5>
         )}
       </div>
     </div>

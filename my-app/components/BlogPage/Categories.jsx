@@ -10,16 +10,14 @@ function Categories() {
   }, []);
 
   return (
-    <div className="text-white mb-12">
-      <h3 className="text-lg sm:text-xl lg:text-2xl text-active mb-6">
-        Kategorie
-      </h3>
+    <div className="mb-12 px-5 lg:px-0">
+      <h5 className="text-left mb-6">Kategorie</h5>
       <div className="flex items-center">
         {categories.map((category) => (
           <Link key={category.slug} href={`/category/${category.slug}`}>
-            <span className="cursor-pointer mr-6 sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-8 hover:text-light">
+            <p className="cursor-pointer mr-6 hover:text-light">
               {category.name}
-            </span>
+            </p>
           </Link>
         ))}
       </div>
