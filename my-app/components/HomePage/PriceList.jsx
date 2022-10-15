@@ -7,7 +7,7 @@ import 'swiper/css/scrollbar';
 
 function PriceList() {
   return (
-    <section id="cennik" className="py-6">
+    <section id="cennik" className="py-6 px-5 max-w-[1400px] mx-auto">
       <h3>
         Cennik
         <div className="w-[60px] lg:w-[100px]" />
@@ -24,7 +24,7 @@ function PriceList() {
         stan zdrowia. Pozwoli to na optymalne ułożenie diety.
       </p>
       <Swiper
-        className="my-12 lg:my-40"
+        className="my-12"
         modules={[Pagination]}
         spaceBetween={50}
         slidesPerView={3}
@@ -36,11 +36,14 @@ function PriceList() {
         }}
       >
         <SwiperSlide>
-          <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-20 dark:bg-opacity-30 rounded-lg mb-12">
+          <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-10 dark:bg-opacity-30 rounded-lg mb-12">
             <h5 className="mb-6 lg:mb-12">3 miesiące współpracy (6 spotkań)</h5>
             <div className="relative">
-              <h2 className="text-3xl lg:text-5xl text-active lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6 lg:mb-0">
+              <h2 className="text-xl lg:text-3xl text-white text-decoration-line: line-through opacity-40 lg:absolute lg:-translate-y-1/2 top-1/4 right-8 mb-2 lg:mb-0">
                 1050.00PLN
+              </h2>
+              <h2 className="text-3xl lg:text-5xl dark:text-active lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6 lg:mb-0">
+                750.00PLN
               </h2>
               <p className="lg:max-w-[600px] mb-6">
                 Współpraca indywidualna to rodzaj współpracy, podczas której
@@ -73,10 +76,10 @@ function PriceList() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-20 dark:bg-opacity-30 rounded-lg mb-12">
+          <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-10 dark:bg-opacity-30 rounded-lg mb-12">
             <h5 className="mb-6 lg:mb-12">1 miesiąc współpracy (3 spotkań)</h5>
             <div className="relative">
-              <h2 className="text-3xl lg:text-5xl text-active lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6 lg:mb-0">
+              <h2 className="text-3xl lg:text-5xl dark:text-active lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6 lg:mb-0">
                 350.00PLN
               </h2>
               <p className="lg:max-w-[600px] mb-6">
@@ -110,10 +113,10 @@ function PriceList() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-20 dark:bg-opacity-30 rounded-lg mb-12">
+          <div className="py-5 px-4 lg:px-6 lg:py-7  bg-black bg-opacity-10 dark:bg-opacity-30 rounded-lg mb-12">
             <h5 className="mb-6 lg:mb-12">Inwidualny jadłospis 7-dniowy</h5>
             <div className="relative">
-              <h2 className="text-3xl lg:text-5xl text-active lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6 lg:mb-0">
+              <h2 className="text-3xl lg:text-5xl dark:text-active lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6 lg:mb-0">
                 150.00PLN
               </h2>
               <p className="lg:max-w-[600px] mb-6">
@@ -147,10 +150,10 @@ function PriceList() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-20 dark:bg-opacity-30 rounded-lg">
+          <div className="py-5 px-4 lg:px-6 lg:py-7 bg-black bg-opacity-10 dark:bg-opacity-30 rounded-lg">
             <h5 className="mb-6 lg:mb-12">Jednorazowa konsultacja</h5>
             <div className="relative">
-              <h2 className="text-3xl lg:text-5xl text-active  lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6 lg:mb-0">
+              <h2 className="text-3xl lg:text-5xl dark:text-active  lg:absolute lg:-translate-y-1/2 top-1/2 right-8 mb-6 lg:mb-0">
                 100.00PLN
               </h2>
               <p className="lg:max-w-[600px] mb-6">
@@ -184,6 +187,12 @@ function PriceList() {
           </div>
         </SwiperSlide>
       </Swiper>
+      <h4>Pobierz darmowy jadłospis!</h4>
+      <a href="./jadlospis.pdf" download>
+        <button className="px-8 lg:px-12 mb-12">
+          <p>Pobierz</p>
+        </button>
+      </a>
     </section>
   );
 }

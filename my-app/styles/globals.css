@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,19 +40,19 @@ h3 {
 }
 
 h3 div {
-  @apply absolute top-[40%] left-[50%] -translate-y-1/2 w-[50px] h-[130%] -z-10 bg-white bg-opacity-10 rounded-lg md:w-[80px] lg:w-[80px];
+  @apply absolute top-[40%] left-[50%] -translate-y-1/2 w-[50px] h-[130%] -z-10 opacity-10 bg-[#4d432a] dark:bg-white rounded-lg md:w-[80px] lg:w-[80px];
 }
 
 h4 {
-  @apply text-lg sm:text-xl lg:text-2xl text-active mb-6 lg:mb-8;
+  @apply text-lg sm:text-xl lg:text-2xl text-black dark:text-active mb-6 lg:mb-8;
 }
 
 h5 {
-  @apply sm:text-lg lg:text-xl text-light leading-8;
+  @apply sm:text-lg lg:text-xl dark:text-light leading-8;
 }
 
 p {
-  @apply text-sm sm:text-base leading-10 md:leading-12;
+  @apply text-sm sm:text-base leading-10 sm:leading-12;
 }
 
 input[type='checkbox'] {
@@ -60,19 +62,19 @@ input[type='checkbox'] {
 button,
 input,
 textarea {
-  @apply border-2 border-light rounded-lg bg-transparent text-light py-1 px-4 flex items-center justify-center hover:border-active hover:text-active;
+  @apply border-2 border-black dark:border-light rounded-lg bg-transparent dark:text-light py-1 px-4 flex items-center justify-center hover:border-[#000000b3] hover:text-[#000000b3] dark:hover:border-active dark:hover:text-active;
 }
 
 ul {
-  @apply marker:text-light list-disc pl-4 space-y-3 lg:leading-12 leading-10 text-sm md:text-base;
+  @apply dark:marker:text-light list-disc pl-4 space-y-3 sm:leading-12 leading-10 text-sm sm:text-base;
 }
 
 ol {
-  @apply text-sm md:text-base lg:leading-12 leading-10;
+  @apply text-sm sm:text-base sm:leading-12 leading-10;
 }
 ol li {
   @apply first-letter:text-3xl first-letter:font-semibold
-  first-letter:mr-3 first-letter:text-light mb-8 lg:mb-12;
+  first-letter:mr-3 dark:first-letter:text-light first-letter:text-[#000000b3] mb-8 lg:mb-12;
 }
 
 .activeMenu {
@@ -87,7 +89,7 @@ ol li {
 }
 
 ::placeholder {
-  color: #f5d9b6 !important;
+  @apply dark:text-light text-black !important;
 }
 
 input,

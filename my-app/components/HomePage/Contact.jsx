@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact() {
   return (
-    <section id="kontakt" className="py-6">
+    <section id="kontakt" className="py-6 px-5 max-w-[1400px] mx-auto">
       <h3>
         Kontakt
         <div className="w-[70px] lg:w-[100px]" />
@@ -42,7 +42,7 @@ function Contact() {
         ></textarea>
         <button
           type="submit"
-          className="bg-black bg-opacity-20 dark:bg-opacity border-none py-3 mb-12 lg:mb-40 hover:dark:bg-opacity-50 hover:text-light"
+          className="bg-black bg-opacity-50 hover:text-white text-white dark:bg-opacity-20 border-none py-3 mb-12 lg:mb-40 dark:hover:bg-opacity-50 dark:hover:text-light"
         >
           <p>Wyślij wiadomość</p>
         </button>

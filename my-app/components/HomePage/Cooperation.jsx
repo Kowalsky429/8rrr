@@ -8,10 +8,10 @@ import 'swiper/css/scrollbar';
 
 function Cooperation() {
   return (
-    <section id="wspolpraca" className="py-6">
+    <section id="wspolpraca" className="py-6 px-5 max-w-[1400px] mx-auto">
       <h3>
         Współpraca
-        <div className="w-[80px] lg:w-[130px]" />
+        <div className="w-[80px] md:w-[110px] lg:w-[130px]" />
       </h3>
       <h4>Na co zwrócić uwagę?</h4>
       <p className="mb-12 lg:mb-24">

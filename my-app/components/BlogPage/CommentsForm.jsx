@@ -44,12 +44,12 @@ function CommentsForm({ slug }) {
   };
 
   return (
-    <div className="bg-black bg-opacity-30 text-white shadow-lg rounded-lg py-8 pb-12 mb-8 px-5">
-      <h5 className="mb-6 text-white">Zostaw komentarz</h5>
+    <div className="bg-black bg-opacity-10 dark:bg-opacity-30 dark:text-white shadow-lg rounded-lg py-8 pb-12 mb-8 px-5">
+      <h5 className="mb-6 dark:text-white">Zostaw komentarz</h5>
       <div className="grid grid-cols-1 grid-gap-4">
         <textarea
           ref={commentEl}
-          className="p-4 md:px-6 h-[200px] lg:h-[300px] sm:text-lg sm:leading-10 lg:text-xl lg:leading-12 leading-9"
+          className="p-4 md:px-6 h-[200px] lg:h-[300px] text-sm sm:text-base sm:leading-12 leading-10"
           placeholder="Komentarz..."
           name="comment"
         />
@@ -58,14 +58,14 @@ function CommentsForm({ slug }) {
         <input
           type="text"
           ref={nameEl}
-          className="p-4 my-8 sm:text-lg lg:text-xl"
+          className="p-4 my-8 text-sm sm:text-base"
           placeholder="Imię"
           name="name"
         />
         <input
           type="text"
           ref={emailEl}
-          className="p-4 md:px-6 sm:text-lg lg:text-xl"
+          className="p-4 md:px-6 text-sm sm:text-base"
           placeholder="Email"
           name="email"
         />
@@ -80,7 +80,7 @@ function CommentsForm({ slug }) {
             value="true"
           />
           <label
-            className="text-active cursor-pointer ml-2 leading-9"
+            className="dark:text-active cursor-pointer ml-2 text-sm sm:text-base leading-10"
             htmlFor="storeData"
           >
             Zapisz mój e-mail oraz imię do następnego komentarza
@@ -92,7 +92,7 @@ function CommentsForm({ slug }) {
         <button
           type="button"
           onClick={handleCommentSubmission}
-          className="bg-white border-none bg-opacity-10 hover:bg-opacity-30 hover:text-light"
+          className="bg-white border-none bg-opacity-30 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:text-light"
         >
           <p>Dodaj komentarz</p>
         </button>

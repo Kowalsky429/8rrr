@@ -2,7 +2,10 @@ import React from 'react';
 
 function Faq() {
   return (
-    <section id="faq" className="py-6">
+    <section
+      id="faq"
+      className="py-6 px-5 max-w-[1400px] mx-auto mt-12 lg:mt-24"
+    >
       <h3>
         Faq
         <div className="w-[50px] md:w-[60px]" />
@@ -16,10 +19,10 @@ function Faq() {
       <section>
         <div>
           <h4>Często zadawane pytania</h4>
-          <div className="grid text-left border-t border-light md:gap-16 md:grid-cols-2">
+          <div className="grid text-left border-t dark:border-light md:gap-16 md:grid-cols-2">
             <div>
               <div className="mb-12 lg:mb-24">
-                <p className="flex items-center text-light mb-2 lg:mb-4">
+                <p className="flex items-center dark:text-light mb-2 lg:mb-4">
                   <svg
                     className="flex-shrink-0 mr-2 w-5"
                     fill="currentColor"
@@ -48,7 +51,7 @@ function Faq() {
                 </p>
               </div>
               <div className="mb-12 lg:mb-24">
-                <p className="flex items-center text-light mb-2 lg:mb-4">
+                <p className="flex items-center dark:text-light mb-2 lg:mb-4">
                   <svg
                     className="flex-shrink-0 mr-2 w-5 h-5"
                     fill="currentColor"
@@ -77,7 +80,7 @@ function Faq() {
                 </p>
               </div>
               <div className="mb-12 lg:mb-24">
-                <p className="flex items-center text-light mb-2 lg:mb-4">
+                <p className="flex items-center dark:text-light mb-2 lg:mb-4">
                   <svg
                     className="flex-shrink-0 mr-2 w-5 h-5"
                     fill="currentColor"
@@ -104,7 +107,7 @@ function Faq() {
                 </p>
               </div>
               <div className="mb-12 lg:mb-24">
-                <p className="flex items-center text-light mb-2 lg:mb-4">
+                <p className="flex items-center dark:text-light mb-2 lg:mb-4">
                   <svg
                     className="flex-shrink-0 mr-2 w-5 h-5"
                     fill="currentColor"
@@ -134,7 +137,7 @@ function Faq() {
             </div>
             <div>
               <div className="mb-12 lg:mb-24">
-                <p className="flex items-center text-light mb-2 lg:mb-4">
+                <p className="flex items-center dark:text-light mb-2 lg:mb-4">
                   <svg
                     className="flex-shrink-0 mr-2 w-5 h-5"
                     fill="currentColor"
@@ -163,7 +166,7 @@ function Faq() {
                 </p>
               </div>
               <div className="mb-12 lg:mb-24">
-                <p className="flex items-center text-light mb-2 lg:mb-4">
+                <p className="flex items-center dark:text-light mb-2 lg:mb-4">
                   <svg
                     className="flex-shrink-0 mr-2 w-5 h-5"
                     fill="currentColor"
@@ -191,7 +194,7 @@ function Faq() {
                 </p>
               </div>
               <div className="mb-12 lg:mb-24">
-                <p className="flex items-center text-light mb-2 lg:mb-4">
+                <p className="flex items-center dark:text-light mb-2 lg:mb-4">
                   <svg
                     className="flex-shrink-0 mr-2 w-5 h-5"
                     fill="currentColor"
@@ -214,7 +217,7 @@ function Faq() {
                 </p>
               </div>
               <div className="mb-12 lg:mb-40">
-                <p className="flex items-center text-light mb-2 lg:mb-4">
+                <p className="flex items-center dark:text-light mb-2 lg:mb-4">
                   <svg
                     className="flex-shrink-0 mr-2 w-5 h-5"
                     fill="currentColor"

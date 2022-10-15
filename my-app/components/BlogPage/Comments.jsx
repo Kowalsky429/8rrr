@@ -16,11 +16,14 @@ const Comments = ({ slug }) => {
     <>
       {comments.length > 0 && (
         <div className="px-5">
-          <h5 className="mb-6 text-white"> {comments.length} Komentarze</h5>
+          <h5 className="mb-6 dark:text-white">
+            {' '}
+            {comments.length} Komentarze
+          </h5>
           {comments.map((comment, index) => (
             <div key={index} className="mb-8">
               <p>
-                <span className="text-light">{comment.name}</span> on{' '}
+                <span className="dark:text-light">{comment.name}</span> on{' '}
                 {moment(comment.createdAt).format('MMM DD, YYYY')}
               </p>
               <p className="whitespace-pre-line w-full opacity-80">

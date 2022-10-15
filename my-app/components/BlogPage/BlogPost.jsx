@@ -19,7 +19,7 @@ const BlogPost = ({ post }) => {
         </div>
         <p className="mb-6 lg:mb-12">{post.excerpt}</p>
         <Link href={`/post/${post.slug}`}>
-          <button className="lg:px-16">
+          <button className="lg:px-12">
             <p>Czytaj dalej...</p>
           </button>
         </Link>

@@ -16,7 +16,7 @@ function Header() {
       strings: [
         'Twoja podróż zaczyna się tutaj!',
         'Wiele ofert czeka na ciebie!',
-        'Dietetyk z Opola Patrycja Janik',
+        'Dietetyk Patrycja Janik',
       ],
       typeSpeed: 20,
       backSpeed: 20,
@@ -30,7 +30,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="h-[500px] lg:h-[100vh] px-5 py-6 lg:py-10 relative bg-my_bg_image bg-cover bg-center">
+    <header className="h-[500px] lg:h-[100vh] px-5 py-6 lg:py-10 relative bg-my_bg_image bg-cover bg-center text-white">
       <div className="relative h-full max-w-[1180px] flex flex-col justify-between items-center mx-auto">
         <nav className="w-full flex items-center justify-between">
           <h2 className="text-lg lg:text-xl">patkadietetycznie</h2>
@@ -96,7 +96,7 @@ function Header() {
         <div className="relative w-full h-[120px] sm:h-[80px] md:h-[90px] lg:h-[120px]">
           <h1
             id="typed"
-            className="text-3xl md:text-4xl lg:text-5xl text-center text-active absolute top-0 left-1/2 -translate-x-1/2 w-full leading-10"
+            className="text-3xl md:text-4xl lg:text-5xl text-center text-active absolute top-0 left-1/2 -translate-x-1/2 w-full leading-10 max-w-[350px] sm:max-w-none"
             ref={ref}
           ></h1>
           <p className="text-sm md:text-base lg:text-lg text-center absolute bottom-0 left-1/2 -translate-x-1/2 w-full opacity-60">

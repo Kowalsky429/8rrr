@@ -18,7 +18,7 @@ module.exports = {
       active: '#EEBC7F',
       light: '#F5D9B6',
       warn: 'crimson',
-      lightModeBackground: '#524f48',
+      lightModeBackground: '#d4cdc3',
       darkModeBackground: '#161616',
     },
     fontFamily: {

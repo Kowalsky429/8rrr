@@ -18,7 +18,7 @@ const PostWidget = ({ categories, slug }) => {
   }, [slug]);
 
   return (
-    <div className="text-white mb-6 px-5 lg:px-0">
+    <div className="dark:text-white mb-6 px-5 lg:px-0">
       <h5 className="mb-6">
         {slug ? 'Powiązane artykuły' : 'Ostatnie artykuły'}
       </h5>
