@@ -33,8 +33,8 @@ function Header() {
     <header className="h-[500px] lg:h-[100vh] px-5 py-6 lg:py-10 relative bg-my_bg_image bg-cover bg-center">
       <div className="relative h-full max-w-[1180px] flex flex-col justify-between items-center mx-auto">
         <nav className="w-full flex items-center justify-between">
-          <h2 className="text-xl lg:text-2xl">patkadietetycznie</h2>
-          <ul className="hidden md:block lg:text-lg">
+          <h2 className="text-lg lg:text-xl">patkadietetycznie</h2>
+          <ul className="hidden md:block text-sm lg:text-base">
             <Link href="#omnie">
               <a className="hover:text-light">O mnie</a>
             </Link>
@@ -70,7 +70,7 @@ function Header() {
           {state ? (
             <ul
               className="fixed
-             w-[100vw] h-[100vh] bg-black bg-opacity-90 flex flex-col items-center justify-evenly top-0 left-0 text-center mx-auto text-xl z-20"
+             w-[100vw] h-[100vh] bg-black bg-opacity-90 flex flex-col items-center justify-evenly top-0 left-0 text-center mx-auto z-20 text-base"
             >
               <Link href="#omnie">
                 <a className="hover:text-light">O mnie</a>
@@ -96,21 +96,21 @@ function Header() {
         <div className="relative w-full h-[120px] sm:h-[80px] md:h-[90px] lg:h-[120px]">
           <h1
             id="typed"
-            className="text-4xl md:text-5xl lg:text-6xl text-center text-active absolute top-0 left-1/2 -translate-x-1/2 w-full"
+            className="text-3xl md:text-4xl lg:text-5xl text-center text-active absolute top-0 left-1/2 -translate-x-1/2 w-full leading-10"
             ref={ref}
           ></h1>
-          <p className="lg:text-xl mt-8 text-center absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
+          <p className="text-sm md:text-base lg:text-lg text-center absolute bottom-0 left-1/2 -translate-x-1/2 w-full opacity-60">
             kliknij aby dowiedzieć się wiecej
           </p>
         </div>
         <Link href="#omnie">
-          <div className="w-[90px] lg:w-[120px] lg:py-2 py-1 px-4 flex items-start justify-center border-3 border-white rounded-lg cursor-pointer hover:border-active">
+          <div className="w-[90px] lg:w-[120px] lg:py-2 py-1 px-4 flex items-start justify-center border-2 border-white rounded-lg cursor-pointer hover:border-active">
             <IoIosArrowDown size={30} />
           </div>
         </Link>
       </div>
       <p
-        className="absolute right-3 bottom-1 opacity-70 cursor-pointer lg:bottom-3 lg:right-6"
+        className="text-xs lg:text-base absolute right-3 bottom-2 opacity-60 cursor-pointer lg:bottom-3 lg:right-6"
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       >
         Zmień tryb

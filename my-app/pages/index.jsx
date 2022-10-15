@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="w-full font-kalam bg-lightModeBackground dark:bg-darkModeBackground text-white">
+    <div className="w-full font-ubuntu bg-lightModeBackground dark:bg-darkModeBackground text-white">
       <Head>
         <title>patkadietetycznie - Patrycja Janik Dietetyk</title>
         <meta
@@ -22,6 +22,12 @@ export default function Home() {
         <meta
           name="keywords"
           content="Patrycja Janik, dietetyk, dietetyk powszechny, dietetyk online, poradnia dietetyczna, wspolczesna dietetyka, lekarz dietetyk, ile kosztuje dietetyk, gabinet dietetyczny, dobry dietetyk online, rozpisane diety cena, najlepsi dietetycy online, ukladanie diety online, lekarz dietetyk kliniczny, najlepszy dietetyk, dietetyk opole, dietetyk polska, najlepszy dietetyk opole, polecany dietetyk, polecany dietetyk opole, tani dobry dietetyk, jak schudnac, jak zdrowo sie odzywiac, dieta, Zdrowie, porady o zdrowym zywieniu, sumplementacja, zdrowe dania, zrzucenie wagi, zdrowie, ukladanie jadlospisow, dietetyk online"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+          rel="stylesheet"
         />
         <link rel="icon" href="/icon.png" />
       </Head>

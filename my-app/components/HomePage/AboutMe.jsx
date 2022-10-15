@@ -11,7 +11,7 @@ const AboutMe = () => {
           <h4>Hej! O to kilka słów o mnie...</h4>
           <p>
             Jestem dietetykiem, aktualnie w trakcie studiów magisterskich.
-            <span className="text-light font-semibold">
+            <span className="text-light">
               {' '}
               Ukończyłam liczne szkolenia z zakresu dietetyki i dietoterapii.{' '}
             </span>
@@ -21,8 +21,9 @@ const AboutMe = () => {
             miłością (oprócz partnera) są długie i powolne poranki, dobra kawa,
             czekolada i masło orzechowe. Uwielbiam gotować. Pewnie gdyby nie
             praca, większość czasu spędzałabym w kuchni. W swojej codziennej
-            praktyce wyznaję{' '}
-            <span className="text-light font-semibold">zasadę 80/20.</span>{' '}
+            praktyce wyznaję <span className="text-light">
+              zasadę 80/20.
+            </span>{' '}
             Uważam, że w naszym jadłospisie może znaleźć się miejsce na bardziej
             przetworzoną żywność, jeżeli zadbamy o zdrowe podstawy. Pracuję
             głównie z kobietami. Specjalizuję się w dietoterapii:
@@ -45,17 +46,6 @@ const AboutMe = () => {
       </p>
       <div className="relative w-full h-[200px] md:h-[300px] lg:h-[350px] my-12 lg:my-24 border-4 border-active dark:opacity-30">
         <img src="/baner.webp" alt="image of dish" loading="lazy" />
-      </div>
-      <div className="flex flex-col lg:flex-row md:justify-between md:items-center">
-        <h4 className="max-w-[700px] md:mb-0 leading-9 sm:leading-14 lg:leading-14 lg:mb-0 text-white">
-          Jesteś zainteresowany/ana? Zobacz oferty jakie oferuję i dowiedz się
-          szczegółów
-        </h4>
-        <Link href="#cennik">
-          <button>
-            <p>Zobacz oferty</p>
-          </button>
-        </Link>
       </div>
       <div className="w-full px-4 lg:flex lg:items-center lg:justify-between lg:px-0 my-16 lg:my-28">
         <div className="flex flex-col items-center mb-20 lg:mb-0">

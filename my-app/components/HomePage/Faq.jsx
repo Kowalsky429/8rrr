@@ -5,7 +5,7 @@ function Faq() {
     <section id="faq" className="py-6">
       <h3>
         Faq
-        <div className="w-[40px] md:w-[60px]" />
+        <div className="w-[50px] md:w-[60px]" />
       </h3>
       <h4>Nie znasz odpowiedzi na pytania?</h4>
       <p className="mb-12 lg:mb-24">

@@ -13,7 +13,7 @@ const CategoryPost = ({ posts }) => {
   }
 
   return (
-    <div className="bg-lightModeBackground dark:bg-darkModeBackground px-5 pt-10 mb-12 lg:-mb-16 font-kalam min-h-[100vh]">
+    <div className="bg-lightModeBackground dark:bg-darkModeBackground px-5 pt-10 mb-12 lg:-mb-16 font-ubuntu min-h-[100vh]">
       <div className="container max-w-[1400px] mx-auto">
         <h3 className="text-light lg:text-4xl mb-12 capitalize">{slug}</h3>
         <Categories />

@@ -19,7 +19,7 @@ const PostDetails = ({ post }) => {
     return <Loader />;
   }
   return (
-    <div className="font-kalam bg-lightModeBackground dark:bg-darkModeBackground">
+    <div className="font-ubuntu bg-lightModeBackground dark:bg-darkModeBackground">
       <div className="container max-w-[1400px] lg:px-5 mx-auto">
         <div className="mb-20">
           <PostDetail post={post} />

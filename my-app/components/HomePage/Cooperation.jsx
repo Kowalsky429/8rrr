@@ -11,9 +11,9 @@ function Cooperation() {
     <section id="wspolpraca" className="py-6">
       <h3>
         Współpraca
-        <div className="w-[70px] lg:w-[130px]" />
+        <div className="w-[80px] lg:w-[130px]" />
       </h3>
-      <h4>Współpraca, na co wzrócić uwagę?</h4>
+      <h4>Na co zwrócić uwagę?</h4>
       <p className="mb-12 lg:mb-24">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec massa
         venenatis in laoreet. Nunc nisl egestas adipiscing pellentesque congue
@@ -85,7 +85,7 @@ function Cooperation() {
         }}
       >
         <SwiperSlide>
-          <div className="relative h-[220px] md:h-[320px]">
+          <div className="relative h-[220px] md:h-[280px]">
             <img
               src="/swiper6.webp"
               className="rounded-lg"
@@ -95,7 +95,7 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[220px] md:h-[320px]">
+          <div className="relative h-[220px] md:h-[280px]">
             <img
               src="/swiper2.webp"
               className="rounded-lg"
@@ -105,7 +105,7 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[220px] md:h-[320px]">
+          <div className="relative h-[220px] md:h-[280px]">
             <img
               src="/swiper3.webp"
               className="rounded-lg"
@@ -115,7 +115,7 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[220px] md:h-[320px]">
+          <div className="relative h-[220px] md:h-[280px]">
             <img
               src="/swiper4.webp"
               className="rounded-lg"
@@ -125,7 +125,7 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[220px] md:h-[320px]">
+          <div className="relative h-[220px] md:h-[280px]">
             <img
               src="/swiper5.webp"
               className="rounded-lg"
@@ -135,7 +135,7 @@ function Cooperation() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-[220px] md:h-[320px]">
+          <div className="relative h-[220px] md:h-[280px]">
             <img
               src="/swiper6.webp"
               className="rounded-lg"

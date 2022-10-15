@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="mx-6 py-10 lg:py-20 text-center md:text-left">
           <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
-              <h5 className="mb-6">Patrycja Janik</h5>
+              <h5 className="mb-6 font-semibold">Patrycja Janik</h5>
               <p>
                 Specjalista z okolic Opola, który zajmuje się indywidualnym
                 doborem diety oraz wsparciem w wypracowaniu odpowiednich nawyków
@@ -41,7 +41,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="text-center">
-              <h5 className="mb-6">Linki</h5>
+              <h5 className="mb-6 font-semibold">Linki</h5>
               <p className="mb-6 lg:mb-8 hover:text-light">
                 <a href="#omnie">O mnie</a>
               </p>
@@ -59,7 +59,7 @@ const Footer = () => {
               </p>
             </div>
             <div>
-              <h5 className="mb-6">Kontakt</h5>
+              <h5 className="mb-6 font-semibold">Kontakt</h5>
               <p className="flex items-center justify-center md:justify-start mb-6">
                 <svg
                   aria-hidden="true"

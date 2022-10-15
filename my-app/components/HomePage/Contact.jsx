@@ -5,7 +5,7 @@ function Contact() {
     <section id="kontakt" className="py-6">
       <h3>
         Kontakt
-        <div className="w-[60px] lg:w-[100px]" />
+        <div className="w-[70px] lg:w-[100px]" />
       </h3>
       <h4>Masz pytanie? Pisz śmiało!</h4>
       <p className="mb-12">
@@ -23,7 +23,7 @@ function Contact() {
           type="text"
           name="imie"
           placeholder="Imię"
-          className="p-4 md:px-6 sm:text-lg lg:text-xl"
+          className="p-4 md:px-6 text-sm sm:text-base lg:text-lg"
         />
         <span className="my-8 lg:my-16 flex flex-col">
           <h5 className="mb-6">Adres e-mail*</h5>
@@ -31,14 +31,14 @@ function Contact() {
             type="email"
             name="email"
             placeholder="przykładowy@email.com"
-            className="p-4 md:px-6 sm:text-lg lg:text-xl"
+            className="p-4 md:px-6 text-sm sm:text-base lg:text-lg"
           />
         </span>
         <h5 className="mb-6">Treść wiadomości*</h5>
         <textarea
           name="wiadomosc"
           placeholder="Witam..."
-          className="mb-8 h-[200px] lg:h-[260px] p-4 md:p-6 sm:text-lg lg:text-xl"
+          className="mb-8 h-[200px] lg:h-[260px] p-4 md:p-6 text-sm sm:text-base lg:text-lg"
         ></textarea>
         <button
           type="submit"

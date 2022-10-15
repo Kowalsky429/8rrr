@@ -10,10 +10,10 @@ const BlogPost = ({ post }) => {
         <img src={post.image.url} alt={post.title} className="rounded-lg" />
       </div>
       <div className="lg:py-4 mx-auto">
-        <h5 className="mb-1 lg:mb-4">{post.title}</h5>
+        <h5 className="mb-4 lg:mb-4">{post.title}</h5>
         <div className="flex items-center mb-6">
           <BsFillCalendarDateFill className="opacity-70" />
-          <p className="ml-3 opacity-70 sm:text-lg lg:text-xl">
+          <p className="ml-3 opacity-70 text-sm sm:text-base lg:text-lg">
             {moment(post.createdAt).format('MMM DD, YYYY')}
           </p>
         </div>
